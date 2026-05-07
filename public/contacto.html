@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Contacto | DevPortafolio</title>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <nav class="p-5 flex justify-between items-center bg-gray-800/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent italic">
+            <a href="index.html">&lt;DevPortafolio /&gt;</a>
+        </h1>
+        <div class="space-x-8 font-medium">
+            <a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a>
+            <a href="sobre-mi.html" class="text-gray-400 hover:text-white transition">Sobre Mí</a>
+            <a href="proyectos.html" class="text-gray-400 hover:text-white transition">Proyectos</a>
+            <a href="contacto.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Contacto</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="max-w-xl w-full bg-gray-800/40 backdrop-blur-lg border border-gray-700 p-10 rounded-3xl shadow-2xl">
+            <div class="text-center mb-10">
+                <span class="material-icons-outlined text-blue-500 text-5xl mb-4">alternate_email</span>
+                <h2 class="text-3xl font-extrabold">¡Hablemos!</h2>
+                <p class="text-gray-400 mt-2">Envíame un mensaje y te responderé pronto.</p>
+            </div>
+
+            <form action="confirmacion.html" method="GET" class="space-y-6">
+                <div class="group">
+                    <label class="block text-sm font-semibold text-gray-400 mb-2">Nombre</label>
+                    <input type="text" name="nombre" class="w-full p-3 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-blue-500 outline-none transition" required>
+                </div>
+                <div class="group">
+                    <label class="block text-sm font-semibold text-gray-400 mb-2">Email</label>
+                    <input type="email" name="email" class="w-full p-3 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-blue-500 outline-none transition" required>
+                </div>
+                <div class="group">
+                    <label class="block text-sm font-semibold text-gray-400 mb-2">Mensaje</label>
+                    <textarea name="mensaje" class="w-full p-3 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-blue-500 outline-none transition h-32 resize-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-bold shadow-lg shadow-blue-900/20 transition-all flex items-center justify-center gap-2">
+                    Enviar Mensaje <span class="material-icons-outlined">send</span>
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

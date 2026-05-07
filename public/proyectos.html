@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mis Proyectos | Portafolio</title>
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen">
+
+    <nav class="p-5 flex justify-between items-center bg-gray-800/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent italic">
+            &lt;DevPortafolio /&gt;
+        </h1>
+        <div class="space-x-8 font-medium">
+            <a href="index.html" class="text-gray-400 hover:text-blue-400 transition-colors">Inicio</a>
+            <a href="proyectos.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Proyectos</a>
+            <a href="contacto.html" class="text-gray-400 hover:text-blue-400 transition-colors">Contacto</a>
+            <a href="sobre-mi.html" class="text-gray-400 hover:text-blue-400 transition-colors">Sobre Mí</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black mb-4">Portafolio de <span class="text-blue-500">Proyectos</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Una selección de mis trabajos más recientes enfocados en desarrollo Backend y Frontend.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="group bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 shadow-2xl">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?w=500" alt="Inventario" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-blue-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Node.js</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-2xl mb-3 group-hover:text-blue-400 transition-colors">Sistema de Inventario</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Control total de stock con base de datos MySQL. Incluye autenticación de usuarios y reportes en PDF.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-1 rounded">MySQL</span>
+                        <span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-1 rounded">Express</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 shadow-2xl">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=500" alt="E-commerce" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-emerald-600 text-xs font-bold px-3 py-1 rounded-full uppercase">Fullstack</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-2xl mb-3 group-hover:text-emerald-400 transition-colors">Tienda Virtual</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Plataforma de ventas con carrito de compras dinámico y pasarela de pagos integrada.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-1 rounded">JavaScript</span>
+                        <span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-1 rounded">API REST</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        &copy; 2026 Tu Nombre | Desarrollado con Node.js
+    </footer>
+
+</body>
+</html>

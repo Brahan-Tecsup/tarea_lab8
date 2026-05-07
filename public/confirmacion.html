@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>¡Enviado!</title>
+    <style>
+        @keyframes pop { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        .animate-pop { animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-md w-full bg-gray-800 border border-gray-700 p-12 rounded-3xl shadow-2xl text-center animate-pop">
+        <div class="mb-6 flex justify-center">
+            <div class="w-20 h-20 bg-emerald-500/20 rounded-full flex items-center justify-center border border-emerald-500/50">
+                <span class="material-icons-outlined text-emerald-500 text-5xl">check_circle</span>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-black mb-4">¡Mensaje Recibido!</h2>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+            Gracias por contactarme. He recibido tus datos correctamente y te escribiré muy pronto.
+        </p>
+
+        <a href="index.html" class="inline-flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-8 py-3 rounded-xl font-bold transition">
+            <span class="material-icons-outlined">arrow_back</span> Volver
+        </a>
+    </div>
+</body>
+</html>

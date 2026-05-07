@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi Portafolio | Inicio</title>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans selection:bg-blue-500 selection:text-white">
+
+    <nav class="p-5 flex justify-between items-center bg-gray-800/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent italic">
+            &lt;DevPortafolio /&gt;
+        </h1>
+        <div class="space-x-8 font-medium">
+            <a href="index.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">Inicio</a>
+            <a href="proyectos.html" class="text-gray-400 hover:text-blue-400 transition-colors">Proyectos</a>
+            <a href="contacto.html" class="text-gray-400 hover:text-blue-400 transition-colors">Contacto</a>
+            <a href="sobre-mi.html" class="text-gray-400 hover:text-blue-400 transition-colors">Sobre Mí</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto py-20 px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+                <img src="desarrollador.png" alt="Foto de perfil" 
+                     class="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-gray-800 shadow-2xl transition-transform duration-500 group-hover:scale-105">
+            </div>
+
+            <div class="text-center md:text-left">
+                <span class="text-blue-400 font-mono text-sm mb-2 block tracking-widest uppercase">Disponible para proyectos</span>
+                <h2 class="text-5xl md:text-7xl font-black mb-4 tracking-tight leading-tight">
+                    ¡Hola, soy <span class="text-blue-500">Brahan Quispe</span>!
+                </h2>
+                <p class="text-xl text-gray-400 max-w-lg">
+                    Construyo experiencias digitales robustas usando <span class="text-white font-semibold">Node.js</span> para el corazón y <span class="text-white font-semibold">Tailwind</span> para el alma de tus sitios.
+                </p>
+                <div class="mt-8 flex justify-center md:justify-start gap-4">
+                    <a href="contacto.html" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-900/40 transition-all active:scale-95">Contáctame</a>
+                    <a href="proyectos.html" class="border border-gray-700 hover:bg-gray-800 px-8 py-3 rounded-full font-bold transition-all">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 bg-gray-800/50 p-8 rounded-3xl border border-gray-700 shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 text-blue-300 flex items-center gap-2">
+                    <span class="w-8 h-1 bg-blue-500 rounded-full"></span> Sobre mí
+                </h3>
+                <p class="leading-relaxed text-gray-300 text-lg">
+                    Soy un apasionado estudiante de Desarrollo Web con enfoque en soluciones escalables. Me encanta resolver problemas complejos a través de código limpio y eficiente, siempre buscando el equilibrio perfecto entre rendimiento y estética.
+                </p>
+            </div>
+
+            <div class="bg-gray-800/30 p-8 rounded-3xl border border-dashed border-gray-700">
+                <h4 class="text-sm font-bold uppercase text-gray-500 mb-4 tracking-widest">Stack Favorito</h4>
+                <ul class="space-y-3 font-mono text-blue-400">
+                    <li class="flex items-center gap-2">🚀 Node.js</li>
+                    <li class="flex items-center gap-2">🎨 Tailwind CSS</li>
+                    <li class="flex items-center gap-2">💾 JavaScript</li>
+                    <li class="flex items-center gap-2">📂 Git / GitHub</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        &copy; 2026 Tu Nombre - Hecho con Node.js y Tailwind
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
